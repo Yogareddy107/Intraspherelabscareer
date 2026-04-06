@@ -9,6 +9,7 @@ import { AdminProvider } from "@/contexts/AdminContext";
 import PublicLayout from "@/components/layout/PublicLayout";
 import AdminLayout from "@/components/layout/AdminLayout";
 import ProtectedRoute from "@/components/admin/ProtectedRoute";
+import ScrollToTop from "@/components/layout/ScrollToTop";
 
 // Public Pages
 import Index from "@/pages/Index";
@@ -35,6 +36,7 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <ScrollToTop />
           <Routes>
             {/* Public Routes */}
             <Route element={<PublicLayout />}>
